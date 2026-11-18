@@ -1,0 +1,27 @@
+{
+  "name": "cadprint",
+  "version": "1.0.0",
+  "description": "An internal ERP, Point-of-Sale (POS), and accounting management web application built for CADPrint to streamline shop order intake, real-time inventory tracking, employee attendance, and daily cash reconciliation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently -k \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamiahmendoza/CadPrint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shamiahmendoza/CadPrint/issues"
+  },
+  "homepage": "https://github.com/shamiahmendoza/CadPrint#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
